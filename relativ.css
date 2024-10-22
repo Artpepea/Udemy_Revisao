@@ -1,0 +1,18 @@
+html {
+    background-color: darkgray;
+}
+.teste1{
+    color: red;
+}
+.teste2{
+    color: blue;
+}
+.teste3{
+    color: green;
+}
+#teste{
+    color: blueviolet;
+}
+p[draggable="false"]{
+color: red;
+}

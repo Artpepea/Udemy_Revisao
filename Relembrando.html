@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="./relativ.css"
+    />
+    <title>Recaptulando Sobre Html</title>
+</head>
+<body>
+    <title>Vamos retomar os estudos e lembrar os comandos basicos!</title>
+    <h1>Os elementos como H1 são utilizados como subtitulos e vão do 1 ao 5 sempre diminuindo a <br/>
+        fonte utilizada ! Por explo aqui usei h1</h1>
+        <pr>O comando Pr serve como um paragrafo que atua normalmente junto do br/ servindo como quebra da linha. <br/>
+            já aqui usei o pr ou p </pr>
+            <h1>h1</h1>
+<h2>h2</h2>
+<h3>h3</h3>
+<pr>pr</pr>
+<p>Já aqui usei o p</p>
+<hr/>
+<pr>Podemos usar também o comando hr/ para criar uma linha seprando por exemplo o titulo do restante da pagina</pr>
+<ul>
+    <li>Aqui estou usando ul</li> 
+    <li>e logo apos o li servindo como</li>
+    <li> um elemento de lista não enumerado</li>
+    <li>1 abra a < ul > introduza dentro desse elemento os  < li ></li>
+<li>e feche a < ul > quando encerrar a lista.</ul></li>
+</ul>
+<ol>
+    <li>Assim como a lista acima podemos usar o < ol ></li>
+    <li>Juntamente do li servindo como uma lista numerada</li>
+</ol>
+<pr>Podemos também criar listas ordenadas dentro de outras listas!</pr>
+<pr>Basta abrir a ul por exemplo e dentro dela abrir outra ul antes de fechar tudo.</pr>
+<ul>
+    <li>Aqui</li>
+    <li>Abri a</li>
+    <li>ul</li>
+    <ol>
+        <li>Aqui</li>
+        <li>Abri a</li>
+        <li>Ol</li>
+        <li>E agora fechei a ol</li>
+    </ol>
+    <li>Aqui voltei a ul e em seguida vou fechar ela</li>
+</ul>
+<hr/>
+<pr> Agora vamos usar o elemento de ancora A para criar links de encaminhamento.</pr><br/>
+<pr>Usamos o A junto do href que serve para direcionar a um link especifico.</pr><br/>
+<pr>Vou representar o < por ;</pr><br/>
+<pr>;a href="link"; agora o nome do link e fechamos com ;/a; ficando assim.</pr> <br/>
+<br/>
+<a href="https://www.youtube.com/shorts/8EO6l1giAdc">Gato dançando</a>
+<h3>Importante sempre que usar o Pr usar o br/ no fim pra quebrar a linha! e para pular linha também!</h3>
+<h3>Dentro do a também pode usar o elemento draggable=true e logo em seguida o href </h3>
+<h3>Vai servir para tornar o link arrastavel ao invés de somente grifalo para copiar por exemplo!</h3>
+<a draggable="true" href="https://www.youtube.com/shorts/8EO6l1giAdc">Este da pra arrastar</a>
+<br/>
+<br/>
+<a href="https://www.youtube.com/shorts/8EO6l1giAdc">Este não da pra arrastar</a>
+<hr/>
+<h1>Vamos usar agora do elemento img src="url"/</h1>
+<p>Esse elemtno vai servir como ancora para traser imagens ao site!</p>
+<P>Basta usarmos esse elemento assim como o href e definir o link qual vamos trazer a imagem.</P>
+<P>Uma boa referencia de site para pegar imagens é o picsum.photos</P>
+<a href="picsum.photos">Fotos aqui</a>
+<br/>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_JQbLAzB3NyE4K-iNcSi7G6XeepernPNtHg&s" alt="Meme Computaria">
+<h2>Devemos sempre que possivel utilizar o elemento alt="descrição da imagem" para ajudar a criar uma descrição para imagem para aqueles que não enchergam, basta adicionar ele após fechar as aspas do link da imagem!</h2>
+<br/>
+<hr/>
+<h2>Vamos usar de preferencia o estilo css externo, ou seja, teremos um arquivos css separado de nosso html <br/>
+para evitar acumulo de informações em nosso codigo.<br/> Vamos usar logo após o head no Doctype o link que ira servir para direcionar as informações do css para nosso codigo, ficando assim: < link rel="stylesheet" href="./arquivo css />" </h2>
+<p>Para realacionarmos o css diretamente a nosso codigo podemos definir id, categoria, entre outras informações <br/>
+para direcionar estilos e alterações visuais diretamente a um elemento, por exemplo:<br/>
+H1 {<br/>
+    color: blue<br/>
+}<br/>
+Isso ira definir todos h1 como azul! Mas posso usar também os id como:<br/>
+depois do h1 vou colocar assim:<br/>
+< h1 class="classe"> texto < /h2><br/>
+Dessa maneira só irei alterar no css os elementos com essa classe especifica!</p>
+<h1 class="teste1">Teste 1</h1>
+<h2 class="teste2">Teste 2</h2>
+<h3 class="teste3">Teste 3</h3>
+<hr/>
+<p>Temos também o id que podemos utilizar quase da mesma maneira que o class!</p>
+<P>< h2 id="identificador"> teste < /h2></P>
+<h3 id="teste">Teste</h3>
+<p>A diferença é que id pode ser usado em somente 1 elemento já o class pode ser usado em varios iguais!</p>
+<h3>Temos também o atributo Draggable que basicamente podemos definir como true ou false e ele ira <br/>
+alterar apenas os elementos com o atributo draggable identificado!</h3>
+<p>Exemplo:<br/>
+< p draggable="true">Teste < /p> <br/>
+Esse elemento quando selecionado no css ira ser definido pelo posição true or false!<br/>
+< p draggable="false">Teste < /p><br/>
+Ficando assim:</p><br/>
+<p draggable="true">True</p>
+<p draggable="false">False</p>
+<p draggable="false">False</p>
+<h3>Temos também o seletor universal definido por * basicamente ele seleciona tudo e executa como mandado no css!</h3>
+<h3>No css ficariam esse seletores dessa maneira:</h3>
+<img src="./Printcss.png" alt="Foto dos seletores CSS">
+
+
+
+</body>
+</html>
